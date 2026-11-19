@@ -1,0 +1,217 @@
+seed_count: 30
+methods:
+  wheel_imu_dead_reckoning:
+    position_rmse_m_all:
+      mean: 13.347423741838035
+      std_between_seeds: 0.8795793676265745
+      bootstrap_95pct_ci_of_mean:
+      - 13.054609086822197
+      - 13.669023857594917
+    position_p95_m_all:
+      mean: 29.04586734285548
+      std_between_seeds: 1.8742767481995326
+      bootstrap_95pct_ci_of_mean:
+      - 28.41935875756954
+      - 29.715960879275315
+    heading_rmse_rad_all:
+      mean: 0.06697548243091184
+      std_between_seeds: 0.004229524677901125
+      bootstrap_95pct_ci_of_mean:
+      - 0.06561009409730845
+      - 0.06856830351977575
+    position_rmse_m_gnss_outage:
+      mean: 11.601215607239517
+      std_between_seeds: 0.7897065862402338
+      bootstrap_95pct_ci_of_mean:
+      - 11.32122603504692
+      - 11.894611866782357
+    position_p95_m_gnss_outage:
+      mean: 21.287506608697374
+      std_between_seeds: 1.428140588870956
+      bootstrap_95pct_ci_of_mean:
+      - 20.79233463159815
+      - 21.80193179166123
+  camera_dead_reckoning:
+    position_rmse_m_all:
+      mean: 18.580163658860574
+      std_between_seeds: 17.06123529168964
+      bootstrap_95pct_ci_of_mean:
+      - 13.000451343669285
+      - 25.2453693609909
+    position_p95_m_all:
+      mean: 37.02808030601209
+      std_between_seeds: 34.42971415562257
+      bootstrap_95pct_ci_of_mean:
+      - 26.271168431626318
+      - 49.6738755630012
+    heading_rmse_rad_all:
+      mean: 0.09619737722236313
+      std_between_seeds: 0.06962767097808757
+      bootstrap_95pct_ci_of_mean:
+      - 0.07388623662841393
+      - 0.12307520752343509
+    position_rmse_m_gnss_outage:
+      mean: 17.157964016483188
+      std_between_seeds: 15.73301225807549
+      bootstrap_95pct_ci_of_mean:
+      - 12.252906778265505
+      - 23.236062028395505
+    position_p95_m_gnss_outage:
+      mean: 29.521893936365927
+      std_between_seeds: 27.25072464752943
+      bootstrap_95pct_ci_of_mean:
+      - 20.535516819759795
+      - 40.028829004097396
+  ekf_full:
+    position_rmse_m_all:
+      mean: 0.46622700651834836
+      std_between_seeds: 0.22991446254609268
+      bootstrap_95pct_ci_of_mean:
+      - 0.3873362262632064
+      - 0.5543215451165847
+    position_p95_m_all:
+      mean: 1.1609116388233416
+      std_between_seeds: 0.6666170701749705
+      bootstrap_95pct_ci_of_mean:
+      - 0.9313034039722695
+      - 1.416823514072873
+    heading_rmse_rad_all:
+      mean: 0.012628883755019464
+      std_between_seeds: 0.00414464919615964
+      bootstrap_95pct_ci_of_mean:
+      - 0.011254189972544104
+      - 0.0141367136813761
+    position_rmse_m_gnss_outage:
+      mean: 0.6777384342330028
+      std_between_seeds: 0.37216189402967526
+      bootstrap_95pct_ci_of_mean:
+      - 0.5549225516818366
+      - 0.8197908550390312
+    position_p95_m_gnss_outage:
+      mean: 1.41033192626901
+      std_between_seeds: 0.8369531297974323
+      bootstrap_95pct_ci_of_mean:
+      - 1.1476978432218305
+      - 1.723064922169201
+    recovery_time_mean_s:
+      mean: 0.014166666666666987
+      std_between_seeds: 0.027608198848859993
+      bootstrap_95pct_ci_of_mean:
+      - 0.005000000000000247
+      - 0.02500000000000059
+    outages_recovered_count:
+      per_seed_mean: 2.0
+      total_outages: 60
+      planned_outages: 60
+  ekf_no_camera:
+    position_rmse_m_all:
+      mean: 0.5014482042596783
+      std_between_seeds: 0.24329268158097725
+      bootstrap_95pct_ci_of_mean:
+      - 0.42457454090046015
+      - 0.5935488576951483
+    position_p95_m_all:
+      mean: 1.2540373692461144
+      std_between_seeds: 0.7028350147080638
+      bootstrap_95pct_ci_of_mean:
+      - 1.0216570647022287
+      - 1.4998032775991703
+    heading_rmse_rad_all:
+      mean: 0.01270294316665506
+      std_between_seeds: 0.004113995768199508
+      bootstrap_95pct_ci_of_mean:
+      - 0.011312178504225468
+      - 0.01422554330318831
+    position_rmse_m_gnss_outage:
+      mean: 0.7309091300370824
+      std_between_seeds: 0.3972459131967631
+      bootstrap_95pct_ci_of_mean:
+      - 0.5936505151827993
+      - 0.8843015751374774
+    position_p95_m_gnss_outage:
+      mean: 1.5120876410824156
+      std_between_seeds: 0.8956791302012711
+      bootstrap_95pct_ci_of_mean:
+      - 1.2161250340637326
+      - 1.8522916758126176
+  ekf_no_gnss:
+    position_rmse_m_all:
+      mean: 15.160570605214454
+      std_between_seeds: 11.955919163431549
+      bootstrap_95pct_ci_of_mean:
+      - 11.367605092525343
+      - 19.536757206832704
+    position_p95_m_all:
+      mean: 30.488475097459588
+      std_between_seeds: 23.915970134050223
+      bootstrap_95pct_ci_of_mean:
+      - 22.738616669220455
+      - 39.378549193483416
+    heading_rmse_rad_all:
+      mean: 0.08839110812307872
+      std_between_seeds: 0.0632282206425618
+      bootstrap_95pct_ci_of_mean:
+      - 0.06802796187700673
+      - 0.11153766559869611
+    position_rmse_m_gnss_outage:
+      mean: 14.060960915172643
+      std_between_seeds: 11.279362540676143
+      bootstrap_95pct_ci_of_mean:
+      - 10.198336613445747
+      - 18.320096602559012
+    position_p95_m_gnss_outage:
+      mean: 25.27901684246037
+      std_between_seeds: 19.274635092636366
+      bootstrap_95pct_ci_of_mean:
+      - 19.198888881822224
+      - 32.75589649461187
+  ekf_wheel_imu_only:
+    position_rmse_m_all:
+      mean: 13.347423741838318
+      std_between_seeds: 0.8795793676265355
+      bootstrap_95pct_ci_of_mean:
+      - 13.049028942698781
+      - 13.655261582434111
+    position_p95_m_all:
+      mean: 29.045867342856074
+      std_between_seeds: 1.8742767481994556
+      bootstrap_95pct_ci_of_mean:
+      - 28.39083681693575
+      - 29.72915776758591
+    heading_rmse_rad_all:
+      mean: 0.06697548243091328
+      std_between_seeds: 0.004229524677901007
+      bootstrap_95pct_ci_of_mean:
+      - 0.06561389071655559
+      - 0.06844767888720935
+    position_rmse_m_gnss_outage:
+      mean: 11.601215607239766
+      std_between_seeds: 0.7897065862401988
+      bootstrap_95pct_ci_of_mean:
+      - 11.336361347842681
+      - 11.903419397846518
+    position_p95_m_gnss_outage:
+      mean: 21.28750660869783
+      std_between_seeds: 1.4281405888708791
+      bootstrap_95pct_ci_of_mean:
+      - 20.80793094557334
+      - 21.79450500039656
+paired_comparisons:
+  ekf_full_minus_ekf_no_camera_outage_rmse_m:
+    mean_paired_difference: -0.05317069580407943
+    bootstrap_95pct_ci_of_mean:
+    - -0.129831517462806
+    - 0.017361889176205285
+    interpretation: Negative values favor the full sensor set.
+  ekf_full_minus_ekf_no_gnss_outage_rmse_m:
+    mean_paired_difference: -13.383222480939638
+    bootstrap_95pct_ci_of_mean:
+    - -17.648610902868928
+    - -9.481429127127532
+    interpretation: Negative values favor the full sensor set.
+notice: Synthetic paired-seed experiment. Bootstrap intervals quantify uncertainty
+  in the mean over configured noise seeds only; they are not real-world confidence
+  bounds.
+seed_range_inclusive:
+- 17
+- 46

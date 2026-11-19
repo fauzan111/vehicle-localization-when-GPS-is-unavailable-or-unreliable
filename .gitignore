@@ -1,0 +1,13 @@
+.venv/
+.ruff_cache/
+__pycache__/
+.DS_Store
+*.py[cod]
+data/generated/*.csv
+data/generated/nuscenes_*/
+data/generated/*_metadata.yaml
+data/generated/*_metrics.yaml
+data/generated/fusion.yaml
+data/nuscenes/
+data/external/
+/can_bus/

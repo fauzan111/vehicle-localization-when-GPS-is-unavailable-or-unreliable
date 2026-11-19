@@ -1,0 +1,264 @@
+notice: Recorded nuScenes CAN wheel speed and IMU, scored against CAN pose. GNSS fixes
+  are synthetic noisy pose observations. No camera images were used. Scene range is
+  descriptive for this fixed 10-scene mini split.
+scene_names:
+- scene-0061
+- scene-0553
+- scene-0655
+- scene-0757
+- scene-0796
+- scene-1077
+- scene-1094
+- scene-1100
+- scene-0103
+- scene-0916
+aggregate:
+  wheel_imu_gnss_aided:
+    position_rmse_m_all:
+      mean_across_scenes: 1.1784843093211004
+      median_across_scenes: 0.9706580036483707
+      min_across_scenes: 0.6155638473486527
+      max_across_scenes: 2.2242435098562043
+    position_rmse_m_gnss_outage:
+      mean_across_scenes: 1.2471723659596372
+      median_across_scenes: 1.0073417829209594
+      min_across_scenes: 0.5587274610278595
+      max_across_scenes: 2.3997313973838375
+    position_p95_m_gnss_outage:
+      mean_across_scenes: 2.057815071040786
+      median_across_scenes: 1.510729276623568
+      min_across_scenes: 0.781185836124572
+      max_across_scenes: 4.474488996237843
+    heading_rmse_rad_all:
+      mean_across_scenes: 0.03399533713279122
+      median_across_scenes: 0.03490769189145607
+      min_across_scenes: 0.009735729288586466
+      max_across_scenes: 0.0759457643879257
+    scene_count: 10
+    recovery:
+      recovered_outage_count: 18
+      scheduled_outage_count: 20
+      mean_recovery_time_per_scene_s: 0.7123512222222229
+  wheel_imu_only:
+    position_rmse_m_all:
+      mean_across_scenes: 0.6262327720882419
+      median_across_scenes: 0.3791972347384071
+      min_across_scenes: 4.165219400566474e-05
+      max_across_scenes: 2.0915201262390886
+    position_rmse_m_gnss_outage:
+      mean_across_scenes: 0.6219483682357712
+      median_across_scenes: 0.4054441047761923
+      min_across_scenes: 4.3383659525961115e-05
+      max_across_scenes: 1.9522627456601687
+    position_p95_m_gnss_outage:
+      mean_across_scenes: 0.9183929626495854
+      median_across_scenes: 0.5345946024697484
+      min_across_scenes: 5.0042650834006615e-05
+      max_across_scenes: 3.168098230010013
+    heading_rmse_rad_all:
+      mean_across_scenes: 0.00813851651864735
+      median_across_scenes: 0.007580252882405752
+      min_across_scenes: 0.00019925677565820623
+      max_across_scenes: 0.016122037721894175
+    scene_count: 10
+per_scene:
+- scene: scene-0061
+  duration_s: 19.11971
+  sample_count: 937
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 0.9593562755835222
+  position_p95_m_all: 1.5760306003573146
+  heading_rmse_rad_all: 0.03220545889067376
+  position_rmse_m_gnss_outage: 0.9954357720806509
+  position_p95_m_gnss_outage: 1.5620661261331208
+  recovery_events: 2
+  recovery_time_mean_s: 0.9902135000000012
+- scene: scene-0061
+  duration_s: 19.11971
+  sample_count: 937
+  method: wheel_imu_only
+  position_rmse_m_all: 0.22526560974170973
+  position_p95_m_all: 0.34882898192175277
+  heading_rmse_rad_all: 0.016122037721894175
+  position_rmse_m_gnss_outage: 0.23435591178263068
+  position_p95_m_gnss_outage: 0.3227095650063467
+- scene: scene-0553
+  duration_s: 19.880175
+  sample_count: 991
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 0.6889265467335
+  position_p95_m_all: 1.2111035270063861
+  heading_rmse_rad_all: 0.009735729288586466
+  position_rmse_m_gnss_outage: 0.7846649204597134
+  position_p95_m_gnss_outage: 1.1691124936663024
+  recovery_events: 2
+  recovery_time_mean_s: 0.48977300000000135
+- scene: scene-0553
+  duration_s: 19.880175
+  sample_count: 991
+  method: wheel_imu_only
+  position_rmse_m_all: 4.165219400566474e-05
+  position_p95_m_all: 5.589855487622724e-05
+  heading_rmse_rad_all: 0.00019925677565820623
+  position_rmse_m_gnss_outage: 4.3383659525961115e-05
+  position_p95_m_gnss_outage: 5.0042650834006615e-05
+- scene: scene-0655
+  duration_s: 19.758987
+  sample_count: 984
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 1.120995275341625
+  position_p95_m_all: 2.0439016490186614
+  heading_rmse_rad_all: 0.016433066695036396
+  position_rmse_m_gnss_outage: 1.1381787262468648
+  position_p95_m_gnss_outage: 1.6137810551972358
+  recovery_events: 2
+  recovery_time_mean_s: 0.999547999999999
+- scene: scene-0655
+  duration_s: 19.758987
+  sample_count: 984
+  method: wheel_imu_only
+  position_rmse_m_all: 1.083365282558258
+  position_p95_m_all: 1.7344243462635631
+  heading_rmse_rad_all: 0.0039465530672139395
+  position_rmse_m_gnss_outage: 1.1114669194927507
+  position_p95_m_gnss_outage: 1.5356534503709267
+- scene: scene-0757
+  duration_s: 19.800324
+  sample_count: 989
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 0.6155638473486527
+  position_p95_m_all: 0.9766842312896337
+  heading_rmse_rad_all: 0.04475350049229469
+  position_rmse_m_gnss_outage: 0.6379596100299312
+  position_p95_m_gnss_outage: 0.9113000987490918
+  recovery_events: 2
+  recovery_time_mean_s: 0.0
+- scene: scene-0757
+  duration_s: 19.800324
+  sample_count: 989
+  method: wheel_imu_only
+  position_rmse_m_all: 0.2888346002836198
+  position_p95_m_all: 0.33580267260649965
+  heading_rmse_rad_all: 0.008955999534546757
+  position_rmse_m_gnss_outage: 0.31924160152025094
+  position_p95_m_gnss_outage: 0.3372054982361261
+- scene: scene-0796
+  duration_s: 19.579294
+  sample_count: 975
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 0.9111060455821517
+  position_p95_m_all: 1.691924177458058
+  heading_rmse_rad_all: 0.018650076084562758
+  position_rmse_m_gnss_outage: 0.9595648066864266
+  position_p95_m_gnss_outage: 1.459392427114015
+  recovery_events: 2
+  recovery_time_mean_s: 0.9800880000000012
+- scene: scene-0796
+  duration_s: 19.579294
+  sample_count: 975
+  method: wheel_imu_only
+  position_rmse_m_all: 1.217013375516773
+  position_p95_m_all: 2.2944614643303973
+  heading_rmse_rad_all: 0.016081544257730597
+  position_rmse_m_gnss_outage: 1.1664173964221456
+  position_p95_m_gnss_outage: 1.8411396294755509
+- scene: scene-1077
+  duration_s: 19.938344
+  sample_count: 991
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 2.2242435098562043
+  position_p95_m_all: 4.941967978935222
+  heading_rmse_rad_all: 0.03984044760988525
+  position_rmse_m_gnss_outage: 2.3997313973838375
+  position_p95_m_gnss_outage: 4.474488996237843
+  recovery_events: 0
+  recovery_time_mean_s: null
+- scene: scene-1077
+  duration_s: 19.938344
+  sample_count: 991
+  method: wheel_imu_only
+  position_rmse_m_all: 2.0915201262390886
+  position_p95_m_all: 3.9743336900345296
+  heading_rmse_rad_all: 0.01045745295042211
+  position_rmse_m_gnss_outage: 1.9522627456601687
+  position_p95_m_gnss_outage: 3.168098230010013
+- scene: scene-1094
+  duration_s: 19.458979
+  sample_count: 965
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 1.435047393986205
+  position_p95_m_all: 3.1715366174304984
+  heading_rmse_rad_all: 0.03855566096066703
+  position_rmse_m_gnss_outage: 1.830225555480871
+  position_p95_m_gnss_outage: 3.466897164280227
+  recovery_events: 2
+  recovery_time_mean_s: 0.0
+- scene: scene-1094
+  duration_s: 19.458979
+  sample_count: 965
+  method: wheel_imu_only
+  position_rmse_m_all: 0.4926381858880867
+  position_p95_m_all: 0.8748354337110202
+  heading_rmse_rad_all: 0.007603741532556249
+  position_rmse_m_gnss_outage: 0.4953983942346536
+  position_p95_m_gnss_outage: 0.7178046566606308
+- scene: scene-1100
+  duration_s: 19.47902
+  sample_count: 973
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 0.6837518876959566
+  position_p95_m_all: 1.4801678067002562
+  heading_rmse_rad_all: 0.026223742026041746
+  position_rmse_m_gnss_outage: 0.5587274610278595
+  position_p95_m_gnss_outage: 0.781185836124572
+  recovery_events: 2
+  recovery_time_mean_s: 0.49134400000000156
+- scene: scene-1100
+  duration_s: 19.47902
+  sample_count: 973
+  method: wheel_imu_only
+  position_rmse_m_all: 0.11423726138343508
+  position_p95_m_all: 0.18518023503982672
+  heading_rmse_rad_all: 0.006559302148265066
+  position_rmse_m_gnss_outage: 0.12940912003320074
+  position_p95_m_gnss_outage: 0.19207934914592886
+- scene: scene-0103
+  duration_s: 19.379699
+  sample_count: 968
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 2.163892579369968
+  position_p95_m_all: 4.3421206954489735
+  heading_rmse_rad_all: 0.0759457643879257
+  position_rmse_m_gnss_outage: 2.1479876164389484
+  position_p95_m_gnss_outage: 3.7651586244458226
+  recovery_events: 2
+  recovery_time_mean_s: 1.4804115000000007
+- scene: scene-0103
+  duration_s: 19.379699
+  sample_count: 968
+  method: wheel_imu_only
+  position_rmse_m_all: 0.4695598691931944
+  position_p95_m_all: 0.7660991428641795
+  heading_rmse_rad_all: 0.0039025129659311375
+  position_rmse_m_gnss_outage: 0.4848905018980147
+  position_p95_m_gnss_outage: 0.6461075565065024
+- scene: scene-0916
+  duration_s: 19.87887
+  sample_count: 994
+  method: wheel_imu_gnss_aided
+  position_rmse_m_all: 0.9819597317132192
+  position_p95_m_all: 1.48802342982108
+  heading_rmse_rad_all: 0.03760992489223838
+  position_rmse_m_gnss_outage: 1.0192477937612678
+  position_p95_m_gnss_outage: 1.374767888459625
+  recovery_events: 2
+  recovery_time_mean_s: 0.9797830000000012
+- scene: scene-0916
+  duration_s: 19.87887
+  sample_count: 994
+  method: wheel_imu_only
+  position_rmse_m_all: 0.2798517578842476
+  position_p95_m_all: 0.42559641907852114
+  heading_rmse_rad_all: 0.0075567642322552555
+  position_rmse_m_gnss_outage: 0.3259977076543699
+  position_p95_m_gnss_outage: 0.4230816484329945
